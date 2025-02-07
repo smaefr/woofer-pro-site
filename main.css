@@ -1,0 +1,70 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: #00CCCC;
+}
+
+:root {
+    --woofer-cyan: #00FFFF;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 16rem;
+    background-color: rgb(24 24 27);
+}
+
+/* Button Styles */
+.btn {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: rgb(39 39 42);
+    color: white;
+    transition-property: color, background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+.btn:hover {
+    background-color: rgb(63 63 70);
+}
+
+/* Input Styles */
+.input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00FFFF;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    outline: none;
+    transition: all 200ms;
+}
+
+.input:focus {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) #00FFFF;
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow);
+    border-color: transparent;
+}
+
+/* Verify Button */
+.verify-btn {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00FFFF;
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    transition: all 200ms;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.verify-btn:hover {
+    background-color: #00FFFF;
+    color: black;
+} 
