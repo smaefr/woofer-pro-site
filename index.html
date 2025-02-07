@@ -6,23 +6,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(to bottom right, #000000, #001f1f);
-        }
-        :root {
-            --woofer-cyan: #00FFFF;
-        }
-    </style>
 </head>
-<body class="bg-black text-white min-h-screen">
-    <div class="flex min-h-screen p-4">
-        <!-- Floating Sidebar -->
-        <div class="w-64 p-4 space-y-4 bg-zinc-900 rounded-lg">
+<body class="text-white min-h-screen">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <div class="sidebar">
             <!-- Logo Section -->
-            <div class="flex justify-center">
+            <div class="flex justify-center pt-4">
                 <div class="w-16 h-16 rounded-full overflow-hidden">
                     <img src="images/wooferlogo.png" alt="Logo" class="w-full h-full object-cover">
                 </div>
@@ -31,18 +23,20 @@
             <!-- Divider -->
             <div class="border-t border-zinc-800 my-4"></div>
 
-            <!-- Simplified Buttons -->
-            <button type="button" class="w-full bg-zinc-800 text-white p-3 rounded-lg hover:bg-zinc-700 transition-colors" id="instructions">
-                Instructions
-            </button>
+            <!-- Buttons -->
+            <div class="px-4 space-y-4">
+                <button type="button" class="btn" id="instructions">
+                    Instructions
+                </button>
 
-            <button type="button" class="w-full bg-zinc-800 text-white p-3 rounded-lg hover:bg-zinc-700 transition-colors" id="clear">
-                Clear Cache
-            </button>
+                <button type="button" class="btn" id="clear">
+                    Clear Cache
+                </button>
 
-            <a href="https://discord.gg/your-invite-code" target="_blank" class="block w-full bg-zinc-800 text-white p-3 rounded-lg hover:bg-zinc-700 transition-colors text-center">
-                Discord
-            </a>
+                <button onclick="window.open('https://discord.gg/your-invite-code', '_blank')" class="btn">
+                    Discord
+                </button>
+            </div>
         </div>
 
         <!-- Main -->
@@ -53,7 +47,7 @@
                         <div class="space-y-2">
                             <label class="text-sm font-medium text-white">License Key</label>
                             <input type="text" 
-                                   class="w-full bg-black/80 border border-black/40 text-white rounded-lg p-3 outline-none focus:ring-2 focus:ring-[#00FFFF] focus:border-transparent transition-all duration-200" 
+                                   class="input"
                                    placeholder="XXXX-XXXX-XXXX-XXXX"
                                    required>
                         </div>
@@ -61,7 +55,7 @@
                         <div class="space-y-2">
                             <label class="text-sm font-medium text-white">Discord Username</label>
                             <input type="text" 
-                                   class="w-full bg-black/80 border border-black/40 text-white rounded-lg p-3 outline-none focus:ring-2 focus:ring-[#00FFFF] focus:border-transparent transition-all duration-200" 
+                                   class="input"
                                    placeholder="username" 
                                    required>
                         </div>
@@ -72,7 +66,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="bg-black/80 border border-black/40 text-white font-medium py-3 px-4 rounded-2xl transition-all duration-200 w-full flex items-center justify-center gap-2 hover:bg-[#00FFFF] hover:text-black">
+                        <button type="submit" class="verify-btn">
                             Verify
                         </button>
                     </form>
