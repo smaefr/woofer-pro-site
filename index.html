@@ -10,57 +10,58 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom right, #000000, #001f1f);
         }
         :root {
-            --woofer-cyan: #00F5F5;
+            --woofer-cyan: #00FFFF;
         }
     </style>
 </head>
 <body class="bg-black text-white min-h-screen">
     <div class="flex min-h-screen p-4">
         <!-- Floating Sidebar -->
-        <div class="w-64 p-4 space-y-4 bg-black/40 backdrop-blur-xl rounded-2xl border border-[#00F5F5]/20 shadow-2xl h-[calc(100vh-2rem)]">
-            <!-- Logo and Title Section -->
-            <div class="flex flex-col items-center space-y-3">
-                <div class="w-20 h-20 rounded-full border-2 border-[#00F5F5]/20 overflow-hidden">
-                    <img src="images/wooferlogo.png" alt="Woofer Logo" class="w-full h-full object-cover">
+        <div class="w-64 p-4 space-y-4 bg-zinc-900 rounded-lg">
+            <!-- Logo Section -->
+            <div class="flex justify-center">
+                <div class="w-16 h-16 rounded-full overflow-hidden">
+                    <img src="images/wooferlogo.png" alt="Logo" class="w-full h-full object-cover">
                 </div>
-                <h1 class="text-xl font-bold tracking-wider text-[#00F5F5]">WOOFER.PRO</h1>
             </div>
 
             <!-- Divider -->
-            <div class="border-t border-[#00F5F5]/20 my-6"></div>
+            <div class="border-t border-zinc-800 my-4"></div>
 
-            <button type="button" class="bg-black backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-[#00F5F5]/20 text-white font-medium w-full flex items-center justify-center gap-2 transition-all duration-200 hover:bg-[#00F5F5] hover:text-black" id="instructions">
-                View Instructions
+            <!-- Simplified Buttons -->
+            <button type="button" class="w-full bg-zinc-800 text-white p-3 rounded-lg hover:bg-zinc-700 transition-colors" id="instructions">
+                Instructions
             </button>
 
-            <button type="button" class="bg-black backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-[#00F5F5]/20 text-white font-medium w-full flex items-center justify-center gap-2 transition-all duration-200 hover:bg-[#00F5F5] hover:text-black" id="clear">
+            <button type="button" class="w-full bg-zinc-800 text-white p-3 rounded-lg hover:bg-zinc-700 transition-colors" id="clear">
                 Clear Cache
             </button>
 
-            <a href="https://discord.gg/your-invite-code" target="_blank" class="bg-black backdrop-blur-xl rounded-2xl p-4 shadow-2xl border border-[#00F5F5]/20 text-white font-medium w-full flex items-center justify-center gap-2 transition-all duration-200 hover:bg-[#00F5F5] hover:text-black">
-                Join Discord
+            <a href="https://discord.gg/your-invite-code" target="_blank" class="block w-full bg-zinc-800 text-white p-3 rounded-lg hover:bg-zinc-700 transition-colors text-center">
+                Discord
             </a>
         </div>
 
         <!-- Main -->
         <div class="flex-1 flex items-center justify-center p-6">
             <div class="max-w-md w-full">
-                <div class="bg-black backdrop-blur-xl rounded-2xl p-8 shadow-2xl border border-[#00F5F5]/20">
+                <div class="bg-black/80 backdrop-blur-xl rounded-2xl p-8 shadow-2xl shadow-black/20 border border-black/40">
                     <form class="space-y-6">
                         <div class="space-y-2">
-                            <label class="text-sm font-medium text-[#00F5F5]">License Key</label>
+                            <label class="text-sm font-medium text-white">License Key</label>
                             <input type="text" 
-                                   class="w-full bg-black border border-[#00F5F5]/20 text-white rounded-lg p-3 outline-none focus:ring-2 focus:ring-[#00F5F5] focus:border-transparent transition-all duration-200" 
+                                   class="w-full bg-black/80 border border-black/40 text-white rounded-lg p-3 outline-none focus:ring-2 focus:ring-[#00FFFF] focus:border-transparent transition-all duration-200" 
                                    placeholder="XXXX-XXXX-XXXX-XXXX"
                                    required>
                         </div>
 
                         <div class="space-y-2">
-                            <label class="text-sm font-medium text-[#00F5F5]">Discord Username</label>
+                            <label class="text-sm font-medium text-white">Discord Username</label>
                             <input type="text" 
-                                   class="w-full bg-black border border-[#00F5F5]/20 text-white rounded-lg p-3 outline-none focus:ring-2 focus:ring-[#00F5F5] focus:border-transparent transition-all duration-200" 
+                                   class="w-full bg-black/80 border border-black/40 text-white rounded-lg p-3 outline-none focus:ring-2 focus:ring-[#00FFFF] focus:border-transparent transition-all duration-200" 
                                    placeholder="username" 
                                    required>
                         </div>
@@ -71,7 +72,7 @@
                             </div>
                         </div>
 
-                        <button type="submit" class="bg-black border border-[#00F5F5]/20 text-white font-medium py-3 px-4 rounded-2xl transition-all duration-200 w-full flex items-center justify-center gap-2 hover:bg-[#00F5F5] hover:text-black">
+                        <button type="submit" class="bg-black/80 border border-black/40 text-white font-medium py-3 px-4 rounded-2xl transition-all duration-200 w-full flex items-center justify-center gap-2 hover:bg-[#00FFFF] hover:text-black">
                             Verify
                         </button>
                     </form>
