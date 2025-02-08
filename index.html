@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#111111">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,35 +14,27 @@
 <body class="text-white min-h-screen">
     <div class="flex min-h-screen">
         <!-- Sidebar -->
-        <div class="sidebar">
+        <div class="sidebar lg:w-64">
             <!-- Logo Section -->
-            <div class="flex justify-center pt-4">
-                <div class="w-16 h-16 rounded-full overflow-hidden">
+            <div class="flex justify-center pt-4 lg:pt-4">
+                <div class="w-12 h-12 lg:w-16 lg:h-16 rounded-full overflow-hidden">
                     <img src="images/wooferlogo.png" alt="Logo" class="w-full h-full object-cover">
                 </div>
             </div>
 
             <!-- Divider -->
-            <div class="border-t border-zinc-800 my-4"></div>
+            <div class="border-t border-zinc-800 my-2 lg:my-4"></div>
 
             <!-- Buttons -->
-            <div class="px-4 space-y-4">
-                <button type="button" class="btn" id="instructions">
-                    Instructions
-                </button>
-
-                <button type="button" class="btn" id="clear">
-                    Clear Cache
-                </button>
-
-                <button onclick="window.open('https://discord.gg/your-invite-code', '_blank')" class="btn">
-                    Discord
-                </button>
+            <div class="px-2 lg:px-4 space-y-2 lg:space-y-4">
+                <button type="button" class="btn" id="instructions">Instructions</button>
+                <button type="button" class="btn" id="clear">Clear Cache</button>
+                <button onclick="window.open('https://discord.gg/your-invite-code', '_blank')" class="btn">Discord</button>
             </div>
         </div>
 
         <!-- Main -->
-        <div class="flex-1 flex items-center justify-center p-6">
+        <div class="flex-1 flex items-center justify-center p-4 lg:p-6">
             <div class="max-w-md w-full">
                 <div class="bg-zinc-900 rounded-2xl p-8 border-2 border-zinc-800 shadow-[8px_8px_30px_-10px_rgba(75,75,75,0.3)]">
                     <form class="space-y-6">

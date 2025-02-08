@@ -122,4 +122,25 @@ body {
         transform: rotate(0deg);
         opacity: 1;
     }
+}
+
+/* Add these at the end of your file */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .flex.min-h-screen {
+        flex-direction: column;
+    }
+    
+    .input, .verify-btn {
+        font-size: 16px; /* Prevents zoom on mobile */
+    }
+    
+    .bg-zinc-900 {
+        margin: 1rem;
+        padding: 1.5rem !important;
+    }
 } 
