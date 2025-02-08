@@ -143,4 +143,16 @@ body {
         margin: 1rem;
         padding: 1.5rem !important;
     }
+    
+    .cf-turnstile iframe {
+        transform: scale(0.75);
+        margin: -30px;
+    }
+}
+
+/* Add this after your existing media queries */
+.cf-turnstile iframe {
+    transform: scale(0.85);
+    transform-origin: center;
+    margin: -20px;
 } 
