@@ -81,6 +81,7 @@ body {
 /* Form Animation */
 .form-container {
     animation: slideUp 0.6s ease-out;
+    transition: transform 0.2s ease;
 }
 
 @keyframes slideUp {
@@ -92,6 +93,10 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.form-container:hover {
+    transform: scale(1.01);
 }
 
 /* Button Hover Animation */
